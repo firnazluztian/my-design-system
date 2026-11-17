@@ -1,0 +1,15 @@
+---
+description: Design system overview and non-negotiable agent rules
+alwaysApply: true
+---
+
+# @tixia/design-system
+
+Shared UI package for all Tixia apps. Atomic design + Storybook. Distributed by GitHub tag.
+
+- Read `AGENTS.md` before making changes.
+- Search existing atoms/molecules/organisms before adding a component.
+- New public API: component folder + `index.ts` + re-export in `src/index.ts` + Storybook story.
+- No app business logic in this package.
+- SemVer: breaking → major; new components → minor; fixes → patch. Release only via `pnpm release:*` on `master`.
+- Consumers upgrade by editing `#vX.Y.Z` in their `package.json`, then `pnpm install` — do not recommend unreliable CLI tag installs.

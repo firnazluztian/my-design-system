@@ -2,6 +2,12 @@
 
 A modern, accessible, and customizable design system built with React, TypeScript, and Tailwind CSS.
 
+## Agent / AI context
+
+- **[AGENTS.md](./AGENTS.md)** — agent entry (commands, structure, component rules, SemVer, checklist)
+- **[CLAUDE.md](./CLAUDE.md)** — pointer for Claude Code and similar tools
+- **`.cursor/rules/`** — Cursor project rules
+
 ## Features
 
 - 🎨 Built with Tailwind CSS for styling  
@@ -13,14 +19,19 @@ A modern, accessible, and customizable design system built with React, TypeScrip
 
 ---
 
-## Installation
+## Installation (consuming apps)
 
-```bash
-# Install the design system via Git tag
-pnpm add git@github.com:TixiaOTA/design-system.git#v2.3.0
+Declare the package in the app’s `package.json` by GitHub tag (not the public npm registry), then install with pnpm:
+
+```json
+"@tixia/design-system": "github:TixiaOTA/design-system#v2.4.10"
 ```
 
-> Replace `v2.3.0` with the latest version listed in the design system release notes.
+```bash
+pnpm install
+```
+
+> Replace `v2.4.10` with the latest release tag (see `CHANGELOG.md` / GitHub releases). Current package version in this repo: **`2.4.10`**.
 
 ### Peer dependencies
 
@@ -82,9 +93,10 @@ src/
   │   ├── atoms/         # Basic building blocks
   │   ├── molecules/     # Groups of atoms
   │   ├── organisms/     # Complex components
-  │   └── templates/     # Page layouts
+  │   └── tokens/        # Design tokens
   ├── styles/            # Global styles and theme
-  └── utils/             # Utility functions
+  ├── utils/             # Utility functions
+  └── index.ts           # Public package exports
 ```
 
 ---
@@ -139,11 +151,11 @@ This will:
 
 ### 🔼 Upgrading in Consuming Projects
 
-To upgrade a project using this design system:
+CLI upgrades (`pnpm add` / `npm install` with a GitHub tag) are **unreliable** with our SSH/GitHub setup. **Bump manually:**
 
-```bash
-pnpm add git@github.com:TixiaOTA/design-system.git#v2.3.0
-```
+1. Edit the consumer `package.json` tag, e.g. `#v2.4.10` → `#v2.4.11`
+2. Run `pnpm install`
+3. Commit `package.json` and `pnpm-lock.yaml`
 
 > Check `CHANGELOG.md` to review changes before upgrading.
 

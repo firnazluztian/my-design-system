@@ -1,0 +1,14 @@
+---
+description: Component authoring rules for the design system
+globs: src/components/**/*
+alwaysApply: false
+---
+
+# Components
+
+- Place under `atoms/`, `molecules/`, or `organisms/` based on complexity/composition.
+- Folder shape: `Name/Name.tsx`, `Name.stories.tsx`, `Name/index.ts`.
+- Export from local `index.ts` and from `src/index.ts` for public surface.
+- Prefer composing existing primitives over duplicating markup/styles.
+- Type props strictly; document key variants in the story.
+- Keep accessibility: labelled controls, keyboard reachability, sensible focus.
