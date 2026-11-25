@@ -805,7 +805,7 @@ export const NavbarOverlapFix: Story = {
           style={{ zIndex: 1000 }}
         >
           <div className="flex items-center space-x-4">
-            <h2 className="text-lg font-semibold">Tixia Travel Solutions</h2>
+            <h2 className="text-lg font-semibold">Kiichan Travel Solutions</h2>
             <nav className="flex space-x-4">
               <span className="text-sm">Pesawat</span>
               <span className="text-sm">Hotel</span>

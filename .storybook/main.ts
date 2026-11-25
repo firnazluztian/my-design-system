@@ -44,14 +44,19 @@ const config: StorybookConfig = {
     ${head}
     <style>
       .sidebar-header img {
-        width: 120px !important;
-        max-width: none !important;
+        display: block !important;
+        width: auto !important;
+        max-width: 140px !important;
         height: auto !important;
-        margin: 8px 0 !important;
+        max-height: 40px !important;
+        object-fit: contain !important;
+        object-position: left center !important;
+        margin: 4px 0 !important;
       }
       .sidebar-header a {
         width: auto !important;
-        display: block !important;
+        display: inline-flex !important;
+        align-items: center !important;
       }
     </style>
   `,

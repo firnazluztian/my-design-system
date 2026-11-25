@@ -14,10 +14,10 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'TixiaDesignSystem',
+      name: 'KiichanDesignSystem',
       fileName: (format) => {
-        if (format === 'es') return 'tixia-design-system.mjs';
-        return `tixia-design-system.${format}.js`;
+        if (format === 'es') return 'kiichan-design-system.mjs';
+        return `kiichan-design-system.${format}.js`;
       },
       formats: ['es', 'umd']
     },

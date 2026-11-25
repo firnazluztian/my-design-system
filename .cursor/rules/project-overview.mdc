@@ -3,9 +3,9 @@ description: Design system overview and non-negotiable agent rules
 alwaysApply: true
 ---
 
-# @tixia/design-system
+# @kiichan/design-system
 
-Shared UI package for all Tixia apps. Atomic design + Storybook. Distributed by GitHub tag.
+Shared UI package for Kiichan apps. Atomic design + Storybook. Distributed by GitHub tag.
 
 - Read `AGENTS.md` before making changes.
 - Search existing atoms/molecules/organisms before adding a component.

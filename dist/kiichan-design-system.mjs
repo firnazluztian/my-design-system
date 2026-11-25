@@ -29646,11 +29646,11 @@ const Rp = {
     image: "https://design-system-eaip.onrender.com/img/flight-loader-dark.gif",
     message: "Loading, please wait..."
   },
-  "TIXIA-CIRCULAR": {
+  "KIICHAN-CIRCULAR": {
     image: "https://design-system-eaip.onrender.com/img/tixia-circular.gif",
     message: "Loading, please wait..."
   },
-  "TIXIA-LINEAR": {
+  "KIICHAN-LINEAR": {
     image: "https://design-system-eaip.onrender.com/img/tixia-linear.gif",
     message: "Loading, please wait..."
   },
@@ -29661,8 +29661,8 @@ const Rp = {
 }, s6 = {
   "flight-light": "FLIGHT_LIGHT",
   "flight-dark": "FLIGHT_DARK",
-  "tixia-circular": "TIXIA-CIRCULAR",
-  "tixia-linear": "TIXIA-LINEAR",
+  "kiichan-circular": "KIICHAN-CIRCULAR",
+  "kiichan-linear": "KIICHAN-LINEAR",
   "hotel-loader": "HOTEL-LOADER"
 }, la = (t, e) => t === void 0 ? { className: e } : typeof t == "number" ? {
   className: "",
@@ -50741,7 +50741,7 @@ const zM = [
         !i && /* @__PURE__ */ m.jsx("div", { className: "border-t border-gray-200 bg-gray-50 px-4 py-2", children: /* @__PURE__ */ m.jsxs("p", { className: "text-xs text-gray-500 text-center", children: [
           "Powered by",
           " ",
-          /* @__PURE__ */ m.jsx("span", { className: "font-semibold", children: "Tixia Design System" })
+          /* @__PURE__ */ m.jsx("span", { className: "font-semibold", children: "Kiichan Design System" })
         ] }) }),
         /* @__PURE__ */ m.jsxs(
           Vo,

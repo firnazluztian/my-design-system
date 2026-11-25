@@ -1,4 +1,4 @@
-# Tixia Design System
+# Kiichan Design System
 
 A modern, accessible, and customizable design system built with React, TypeScript, and Tailwind CSS.
 
@@ -24,7 +24,7 @@ A modern, accessible, and customizable design system built with React, TypeScrip
 Declare the package in the app’s `package.json` by GitHub tag (not the public npm registry), then install with pnpm:
 
 ```json
-"@tixia/design-system": "github:TixiaOTA/design-system#v2.4.10"
+"@kiichan/design-system": "github:firnazluztian/my-design-system#v2.4.10"
 ```
 
 ```bash
@@ -47,7 +47,7 @@ React and ReactDOM are peer dependencies and are not bundled in `dist`. The cons
 ## Usage
 
 ```tsx
-import { Button } from '@tixia/design-system';
+import { Button } from '@kiichan/design-system';
 
 function App() {
   return (
@@ -108,8 +108,8 @@ pnpm build
 ```
 
 This will generate the following files in the `dist` directory:
-- `tixia-design-system.umd.js` - UMD bundle
-- `tixia-design-system.mjs` - ES module bundle
+- `kiichan-design-system.umd.js` - UMD bundle
+- `kiichan-design-system.mjs` - ES module bundle
 - `index.d.ts` - TypeScript type definitions
 
 ---

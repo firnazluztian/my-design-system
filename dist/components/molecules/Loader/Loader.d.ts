@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-export type LoaderVariant = "flight-light" | "flight-dark" | "tixia-circular" | "tixia-linear" | "hotel-loader";
+export type LoaderVariant = "flight-light" | "flight-dark" | "kiichan-circular" | "kiichan-linear" | "hotel-loader";
 interface LoaderProps {
     variant: LoaderVariant;
     customImage?: string;

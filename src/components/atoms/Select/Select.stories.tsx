@@ -267,7 +267,7 @@ export const WithLongOptions: Story = {
   },
 };
 
-export const TixiaLanguage: Story = {
+export const KiichanLanguage: Story = {
   args: {
     variant: 'ghost',
     value: 'id',

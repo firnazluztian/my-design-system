@@ -3,9 +3,9 @@ import { create } from 'storybook/theming/create';
 
 const theme = create({
   base: 'light',
-  brandTitle: 'TIXIA Design System',
+  brandTitle: 'Kiichan Design System',
   brandUrl: './',
-  brandImage: './TixiaBlue.svg',
+  brandImage: './kiichan.webp',
   brandTarget: '_self',
 });
 

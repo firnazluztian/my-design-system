@@ -36,7 +36,7 @@ const meta: Meta<typeof Loader> = {
     },
     variant: {
       control: { type: 'select' },
-      options: ['flight-light', 'flight-dark', 'tixia-circular', 'tixia-linear', 'hotel-loader'],
+      options: ['flight-light', 'flight-dark', 'kiichan-circular', 'kiichan-linear', 'hotel-loader'],
       description: 'Loader variant',
     },
   },
@@ -45,7 +45,7 @@ const meta: Meta<typeof Loader> = {
 export default meta;
 type Story = StoryObj<typeof Loader>;
 
-const variants: LoaderVariant[] = ["flight-light", "flight-dark", "tixia-circular", "tixia-linear", "hotel-loader"];
+const variants: LoaderVariant[] = ["flight-light", "flight-dark", "kiichan-circular", "kiichan-linear", "hotel-loader"];
 
 export const AllVariants: Story = {
   render: () => (

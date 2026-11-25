@@ -1,12 +1,12 @@
-# AGENTS.md — @tixia/design-system
+# AGENTS.md — @kiichan/design-system
 
-Shared React UI library for all Tixia apps (B2C + B2B). Distributed by **GitHub release tag**, consumed as `@tixia/design-system`. Documented in Storybook.
+Shared React UI library for Kiichan apps. Distributed by **GitHub release tag**, consumed as `@kiichan/design-system`. Documented in Storybook.
 
 ## Tech stack
 
 | Concern | Choice |
 | --- | --- |
-| Package | `@tixia/design-system` (Vite library build) |
+| Package | `@kiichan/design-system` (Vite library build) |
 | UI | React + TypeScript + Tailwind |
 | Docs | Storybook 10 |
 | Structure | Atomic design: atoms / molecules / organisms |
@@ -70,7 +70,7 @@ ComponentName/
 
 Apps must **not** rely on `pnpm add` / `npm install` for tag bumps. Documented path:
 
-1. Edit consumer `package.json`: `"@tixia/design-system": "github:TixiaOTA/design-system#vX.Y.Z"`
+1. Edit consumer `package.json`: `"@kiichan/design-system": "github:firnazluztian/my-design-system#vX.Y.Z"`
 2. `pnpm install`
 3. Commit `package.json` + `pnpm-lock.yaml`
 

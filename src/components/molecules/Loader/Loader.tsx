@@ -4,8 +4,8 @@ import { Text } from "../../atoms/Text";
 export type LoaderVariant =
   | "flight-light"
   | "flight-dark"
-  | "tixia-circular"
-  | "tixia-linear"
+  | "kiichan-circular"
+  | "kiichan-linear"
   | "hotel-loader";
 
 interface LoaderProps {
@@ -29,11 +29,11 @@ const loaderConfig: Record<string, { image: string; message: string }> = {
     image: "https://design-system-eaip.onrender.com/img/flight-loader-dark.gif",
     message: "Loading, please wait...",
   },
-  "TIXIA-CIRCULAR": {
+  "KIICHAN-CIRCULAR": {
     image: "https://design-system-eaip.onrender.com/img/tixia-circular.gif",
     message: "Loading, please wait...",
   },
-  "TIXIA-LINEAR": {
+  "KIICHAN-LINEAR": {
     image: "https://design-system-eaip.onrender.com/img/tixia-linear.gif",
     message: "Loading, please wait...",
   },
@@ -46,8 +46,8 @@ const loaderConfig: Record<string, { image: string; message: string }> = {
 const variantToLoaderCode: Record<LoaderVariant, string> = {
   "flight-light": "FLIGHT_LIGHT",
   "flight-dark": "FLIGHT_DARK",
-  "tixia-circular": "TIXIA-CIRCULAR",
-  "tixia-linear": "TIXIA-LINEAR",
+  "kiichan-circular": "KIICHAN-CIRCULAR",
+  "kiichan-linear": "KIICHAN-LINEAR",
   "hotel-loader": "HOTEL-LOADER",
 };
 

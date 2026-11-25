@@ -947,7 +947,7 @@ const WysiwygEditor: React.FC<WysiwygEditorProps> = ({
         <div className="border-t border-gray-200 bg-gray-50 px-4 py-2">
           <p className="text-xs text-gray-500 text-center">
             Powered by{" "}
-            <span className="font-semibold">Tixia Design System</span>
+            <span className="font-semibold">Kiichan Design System</span>
           </p>
         </div>
       )}
