@@ -291,7 +291,7 @@ const Select = forwardRef<HTMLDivElement | HTMLInputElement, SelectProps>(
 
     const getSelectedLabel = () => {
       if (options) {
-        const selectedOption = options.find((option) => option.value === value);
+        const selectedOption = options.find((option: SelectOption) => option.value === value);
         return selectedOption?.label;
       }
       
@@ -327,7 +327,7 @@ const Select = forwardRef<HTMLDivElement | HTMLInputElement, SelectProps>(
 
     const renderOptions = () => {
       if (options) {
-        return options.map((option) => (
+        return options.map((option: SelectOption) => (
           <SelectItem
             key={option.value}
             value={option.value}

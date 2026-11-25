@@ -1,9 +1,6 @@
 import React from 'react';
 import { type VariantProps } from 'class-variance-authority';
-declare const breadcrumbsVariants: (props?: ({
-    variant?: "default" | "light" | "dark" | null | undefined;
-    size?: "sm" | "md" | "lg" | null | undefined;
-} & import("class-variance-authority/dist/types").ClassProp) | undefined) => string;
+declare const breadcrumbsVariants: (props?: any) => string;
 export type BreadcrumbsVariant = 'default' | 'light' | 'dark';
 export type BreadcrumbsSize = 'sm' | 'md' | 'lg';
 export interface BreadcrumbItem {
@@ -26,5 +23,5 @@ export interface BreadcrumbsProps extends React.HTMLAttributes<HTMLDivElement>, 
     size?: BreadcrumbsSize;
     variant?: BreadcrumbsVariant;
 }
-declare const Breadcrumbs: React.ForwardRefExoticComponent<BreadcrumbsProps & React.RefAttributes<HTMLDivElement>>;
+declare const Breadcrumbs: React.ForwardRefExoticComponent<Omit<BreadcrumbsProps, "ref"> & React.RefAttributes<HTMLDivElement>>;
 export { Breadcrumbs };

@@ -1,12 +1,7 @@
 import React from 'react';
 import { type VariantProps } from 'class-variance-authority';
 export type SelectPosition = 'bottom' | 'top' | 'left' | 'right';
-declare const selectVariants: (props?: ({
-    variant?: "error" | "default" | "success" | "ghost" | "underline" | null | undefined;
-    size?: "sm" | "md" | "lg" | null | undefined;
-    rounded?: "sm" | "md" | "lg" | "none" | "xl" | "2xl" | "3xl" | "full" | null | undefined;
-    fullWidth?: boolean | null | undefined;
-} & import("class-variance-authority/dist/types").ClassProp) | undefined) => string;
+declare const selectVariants: (props?: any) => string;
 export type SelectVariant = 'default' | 'error' | 'success' | 'ghost' | 'underline';
 export type SelectSize = 'sm' | 'md' | 'lg';
 export type SelectRounded = 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full';
@@ -55,5 +50,5 @@ export interface SelectProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 
     /** Name attribute for form submission and React Hook Form */
     name?: string;
 }
-declare const Select: React.ForwardRefExoticComponent<SelectProps & React.RefAttributes<HTMLInputElement | HTMLDivElement>>;
+declare const Select: React.ForwardRefExoticComponent<Omit<SelectProps, "ref"> & React.RefAttributes<HTMLInputElement | HTMLDivElement>>;
 export { Select };

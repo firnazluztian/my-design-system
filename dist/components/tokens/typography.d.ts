@@ -1,7 +1,7 @@
 export declare const typography: {
     readonly fontFamily: {
-        readonly sans: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif";
-        readonly mono: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace";
+        readonly sans: "\"General Sans\", system-ui, sans-serif";
+        readonly mono: "\"General Sans\", system-ui, sans-serif";
     };
     readonly fontSize: {
         readonly xs: "0.75rem";

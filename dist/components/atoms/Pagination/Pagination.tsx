@@ -85,7 +85,7 @@ export const Pagination: React.FC<PaginationProps> = ({
             </span>
             <Select
               value={perPage?.toString()}
-              onChange={(val) =>
+              onChange={(val: string) =>
                 onPerPageChange && onPerPageChange(Number(val))
               }
               size="sm"

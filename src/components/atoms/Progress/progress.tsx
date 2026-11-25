@@ -46,12 +46,12 @@ const barColorMap = {
 };
 
 const circularColorMap = {
-  primary: "#007C99", // Tailwind primary
-  secondary: "#CEEAE7",
-  success: "#00B37D",
-  warning: "#F59E0B",
-  danger: "#EF4444",
-  info: "#0EA5E9",
+  primary: "var(--color-primary)",
+  secondary: "var(--color-secondary)",
+  success: "var(--color-success)",
+  warning: "var(--color-warning)",
+  danger: "var(--color-danger)",
+  info: "var(--color-info)",
 };
 
 export type ProgressVariant = "bar" | "circular" | "loading";
@@ -153,7 +153,7 @@ export const Progress = React.forwardRef<HTMLDivElement, ProgressProps>(
             >
               <circle
                 strokeWidth={strokeWidth}
-                stroke="#e5e7eb" // neutral-200
+                stroke="var(--color-neutral-200)"
                 fill="transparent"
                 r={radius}
                 cx={circularSize / 2}

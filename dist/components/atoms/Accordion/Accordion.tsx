@@ -56,14 +56,14 @@ const variantStyles: Record<AccordionVariant, { hover: string; active: string; t
     text: 'text-gray-700',
   },
   light: {
-    hover: 'hover:bg-light-50',
-    active: 'bg-light-50',
-    text: 'text-light-900',
+    hover: 'hover:bg-light-muted',
+    active: 'bg-light-muted',
+    text: 'text-light-foreground',
   },
   dark: {
-    hover: 'hover:bg-dark-50',
-    active: 'bg-dark-50',
-    text: 'text-dark-50',
+    hover: 'hover:bg-dark-muted',
+    active: 'bg-dark-muted',
+    text: 'text-dark-foreground',
   },
   info: {
     hover: 'hover:bg-info-50',

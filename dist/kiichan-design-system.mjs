@@ -3062,14 +3062,14 @@ const sx = {
     text: "text-gray-700"
   },
   light: {
-    hover: "hover:bg-light-50",
-    active: "bg-light-50",
-    text: "text-light-900"
+    hover: "hover:bg-light-muted",
+    active: "bg-light-muted",
+    text: "text-light-foreground"
   },
   dark: {
-    hover: "hover:bg-dark-50",
-    active: "bg-dark-50",
-    text: "text-dark-50"
+    hover: "hover:bg-dark-muted",
+    active: "bg-dark-muted",
+    text: "text-dark-foreground"
   },
   info: {
     hover: "hover:bg-info-50",
@@ -4625,18 +4625,18 @@ const wx = ({
     bg: "bg-gray-50"
   },
   light: {
-    border: "border-light-200",
-    hover: "hover:border-light-300",
-    active: "border-light-400",
-    text: "text-light-900",
-    bg: "bg-light-50"
+    border: "border-light-border",
+    hover: "hover:border-neutral-300",
+    active: "border-neutral-400",
+    text: "text-light-foreground",
+    bg: "bg-light-muted"
   },
   dark: {
-    border: "border-dark-200",
-    hover: "hover:border-dark-300",
-    active: "border-dark-400",
-    text: "text-dark-50",
-    bg: "bg-dark-50"
+    border: "border-dark-border",
+    hover: "hover:border-neutral-600",
+    active: "border-neutral-500",
+    text: "text-dark-foreground",
+    bg: "bg-dark-muted"
   },
   info: {
     border: "border-info-200",
@@ -25747,13 +25747,12 @@ const Ek = ft("border bg-popover text-popover-foreground", {
   danger: "bg-danger",
   info: "bg-info"
 }, Mk = {
-  primary: "#007C99",
-  // Tailwind primary
-  secondary: "#CEEAE7",
-  success: "#00B37D",
-  warning: "#F59E0B",
-  danger: "#EF4444",
-  info: "#0EA5E9"
+  primary: "var(--color-primary)",
+  secondary: "var(--color-secondary)",
+  success: "var(--color-success)",
+  warning: "var(--color-warning)",
+  danger: "var(--color-danger)",
+  info: "var(--color-info)"
 }, Ak = oe.forwardRef(
   ({
     className: t,
@@ -25796,7 +25795,7 @@ const Ek = ft("border bg-popover text-popover-foreground", {
                       "circle",
                       {
                         strokeWidth: v,
-                        stroke: "#e5e7eb",
+                        stroke: "var(--color-neutral-200)",
                         fill: "transparent",
                         r: E,
                         cx: y / 2,
@@ -29589,20 +29588,13 @@ const Qd = zs(void 0), Q5 = {
 );
 n6.displayName = "InputOTP";
 const Rp = {
-  primary: "#007C99",
-  // tailwind primary.DEFAULT
-  secondary: "#CEEAE7",
-  // tailwind secondary.DEFAULT
-  danger: "#CA0000",
-  // tailwind danger.DEFAULT
-  warning: "#FF9319",
-  // tailwind warning.DEFAULT
-  info: "#0073E6",
-  // tailwind info.DEFAULT
-  success: "#00B37D",
-  // tailwind success.DEFAULT
-  disabled: "#959595"
-  // tailwind disabled.DEFAULT
+  primary: "var(--color-primary)",
+  secondary: "var(--color-secondary)",
+  danger: "var(--color-danger)",
+  warning: "var(--color-warning)",
+  info: "var(--color-info)",
+  success: "var(--color-success)",
+  disabled: "var(--color-disabled)"
 }, uA = ({
   icon: t,
   className: e,

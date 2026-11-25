@@ -3,13 +3,13 @@ import { Icon } from '../../atoms/Icons/Icons';
 import { cn } from '../../../utils/cn';
 
 const ICON_COLOR_MAP = {
-  primary: '#007C99', // tailwind primary.DEFAULT
-  secondary: '#CEEAE7', // tailwind secondary.DEFAULT
-  danger: '#CA0000', // tailwind danger.DEFAULT
-  warning: '#FF9319', // tailwind warning.DEFAULT
-  info: '#0073E6', // tailwind info.DEFAULT
-  success: '#00B37D', // tailwind success.DEFAULT
-  disabled: '#959595', // tailwind disabled.DEFAULT
+  primary: 'var(--color-primary)',
+  secondary: 'var(--color-secondary)',
+  danger: 'var(--color-danger)',
+  warning: 'var(--color-warning)',
+  info: 'var(--color-info)',
+  success: 'var(--color-success)',
+  disabled: 'var(--color-disabled)',
 };
 
 export type IconColor = keyof typeof ICON_COLOR_MAP | string;

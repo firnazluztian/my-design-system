@@ -1,9 +1,5 @@
 import React from 'react';
-declare const inputOTPVariants: (props?: ({
-    variant?: "error" | "default" | "success" | "ghost" | "underline" | null | undefined;
-    size?: "sm" | "md" | "lg" | null | undefined;
-    rounded?: "sm" | "md" | "lg" | "none" | "full" | null | undefined;
-} & import("class-variance-authority/dist/types").ClassProp) | undefined) => string;
+declare const inputOTPVariants: (props?: any) => string;
 export type InputOTPVariant = 'default' | 'error' | 'success' | 'ghost' | 'underline';
 export type InputOTPSize = 'sm' | 'md' | 'lg';
 export type InputOTPRounded = 'none' | 'sm' | 'md' | 'lg' | 'full';

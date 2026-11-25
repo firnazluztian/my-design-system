@@ -70,7 +70,7 @@ const Breadcrumbs = forwardRef<HTMLDivElement, BreadcrumbsProps>(
         {...props}
       >
         <ol className="flex flex-wrap items-center gap-1.5">
-          {items.map((item, index) => {
+          {items.map((item: BreadcrumbItem, index: number) => {
             const isLast = index === items.length - 1;
             const isActive = isLast && activeLastItem;
 

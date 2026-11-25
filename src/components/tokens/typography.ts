@@ -1,7 +1,7 @@
 export const typography = {
   fontFamily: {
-    sans: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+    sans: '"General Sans", system-ui, sans-serif',
+    mono: '"General Sans", system-ui, sans-serif',
   },
   fontSize: {
     xs: "0.75rem", // 12px

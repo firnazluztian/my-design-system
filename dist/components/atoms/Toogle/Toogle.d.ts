@@ -1,8 +1,5 @@
 import React from 'react';
-declare const toggleVariants: (props?: ({
-    variant?: "success" | "primary" | "warning" | "danger" | null | undefined;
-    size?: "sm" | "md" | "lg" | null | undefined;
-} & import("class-variance-authority/dist/types").ClassProp) | undefined) => string;
+declare const toggleVariants: (props?: any) => string;
 export type ToggleVariant = 'primary' | 'success' | 'warning' | 'danger';
 export type ToggleSize = 'sm' | 'md' | 'lg';
 export interface ToggleProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'size'> {
