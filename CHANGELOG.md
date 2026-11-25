@@ -1,4 +1,9 @@
 
+## [v2.4.11] - 2026-11-25
+- chore: update to kiichan branding
+- chore: add agents optimization
+
+
 ## [v2.4.10] - 2026-11-10
 - chore: fix input OTP
 
