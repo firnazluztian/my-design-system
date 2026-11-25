@@ -1,4 +1,8 @@
 
+## [v3.0.0] - 2026-11-25
+- feat: update tailwindv4, update design tokens
+
+
 ## [v2.4.11] - 2026-11-25
 - chore: update to kiichan branding
 - chore: add agents optimization
