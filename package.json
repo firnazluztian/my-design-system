@@ -1,6 +1,6 @@
 {
   "name": "@kiichan/design-system",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": false,
   "main": "./dist/kiichan-design-system.umd.js",
   "module": "./dist/kiichan-design-system.mjs",

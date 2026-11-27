@@ -1,4 +1,8 @@
 
+## [v3.0.1] - 2026-11-27
+- chore: update deployment
+
+
 ## [v3.0.0] - 2026-11-25
 - feat: update tailwindv4, update design tokens
 
